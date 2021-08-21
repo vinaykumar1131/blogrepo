@@ -1,0 +1,14 @@
+<%- include('partial/header'); -%>
+<h1><%= list %></h1>
+<p><%= value %></p> 
+<h2>COMMENTS</h2>
+<% if(typeof comments!='undefined'){%>
+<% comments.forEach(function(post){ %>
+  
+   <h1><%= post.comment%></h1>
+   <% }) %>
+  <% } %>
+   <form action="/port/:postname" method="POST">
+    <input class=" ats form-control" type="text" name="comment" >
+     <button class=" MJ btn btn-dark" type="submit" >LOGIN</button>
+   </form>

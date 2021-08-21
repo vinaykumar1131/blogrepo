@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily does</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <div class="container">
+
+<h1 id="co">REGISTER HERE</h1>
+<%if(typeof err !='undefined') {%>
+<%= err %>
+<%}%>
+<FORM action="/register" method="POST">
+    <div class=" ele form-group">
+        <label>USERNAME:</label>
+<input class=" ats form-control"type="text" name="usern" placeholder="enter the name" required>
+        <label>PHONE NO :</label>
+<input class=" ats form-control"type="text" name="num" placeholder="enter the phone number" required>
+<label>EMail:</label>
+<input class=" ats form-control"type="email" name="email" placeholder="enter the email" required>
+<label>PASSWORD:</label>
+<input  class=" ats form-control" type="password" name="pass" placeholder="enter the password" required>
+
+<button class=" btn btn-dark my-x" type="submit" >REGISTER</button>
+</div>
+</FORM>
